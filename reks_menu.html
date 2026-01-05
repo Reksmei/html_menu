@@ -100,7 +100,7 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ-32fx1zuXSG77uhifFPyUtIJT6pe-Ef5Og&s"
                         alt="Tortilla">
                     <div class="item-details">
-                        <p class="dishes">Tortilla Espanola</p>
+                        <p class="dishes">Tortilla Española</p>
                         <p class="description">Spanish omelette with potatoes, eggs, onions & olive oil</p>
                         <p class="prices">- £7.95</p>
                     </div>
@@ -116,6 +116,16 @@
                         <p class="prices">- £15.99</p>
                     </div>
                 </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://i0.wp.com/www.natachasanzcaballero.com/wp-content/uploads/2021/04/DSC_0800.jpg?fit=1180%2C787&ssl=1"
+                    alt="Alcachofas">
+                <div class="item-details">
+                    <p class="dishes">Alcachofas asadas</p>
+                    <p class="description">Grilled Artichokes with salt and olive oil</p>
+                    <p class="prices">- £15.99</p>
+                </div>
+            </div>
             </div>
 
             <div id="paellas">
@@ -193,6 +203,51 @@
         <section id="order-form">
             <h2>Place your Order</h2>
             <form>
+                <h4>Tapas</h4>
+                <p>Choose which tapas dishes you'd like to order and the quantity</p>
+                <label for "pan-con-tomate">Pan Con Tomate</label>
+                <select name="quantity" id="pan-con-tomate">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for "tortilla-espanola">Tortilla Española</label>
+                <select name="quantity" id="tortilla-espanola">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for "pulpo-a-la-gallega">Pulpo a la Gallega</label>
+                <select name="pulpo-a-la-gallega" id="pulpo-a-la-gallega">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for "alcachofas-asadas">Alcachofas Asadas</label>
+                <select name="alcachofas-asadas" id="alcachofas-asadas">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for="requests-1">Any special order requests? Please let us know of any dietary requirements or
+                    other information below:</label><br>
+                <textarea id="requests-1" name="requests-1" rows="6" cols="50"></textarea>
             </form>
         </section>
 
