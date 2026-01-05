@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reks Restaurant Menu</title>
+    <meta name="keywords" content="Spanish Restaurant">
+    <meta name="description"
+        content="Welcome to Reks Restaurant, an authentic Spanish restaurant serving up Spanish classics from all over Spain.">
+    <style>
+        body {
+            background-color: yellow;
+            color: black;
+            font-family: sans-serif;
+            line-height: 1.4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .item-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-item img {
+            width: 180px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .dishes {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0 0 5px 0;
+        }
+
+        .description {
+            font-style: italic;
+            margin: 0 0 5px 0;
+        }
+
+        .prices {
+            font-weight: bold;
+            color: #d32f2f;
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Reks Restaurant</h1>
+        <p style="font-style: italic;">Welcome to Reks' Restaurant, serving you authentic Spanish cuisine for takeaway
+            and delivery</p>
+        <nav>
+            <ol>
+                <li><a href="#menu">Go to Menu</a></li>
+                <li><a href="#order-form">Place your order</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+
+            <div id="tapas">
+                <h3>Tapas</h3>
+
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9VWMChDApTtBrtEQlO5P_ii4li2UMC7eKqQ&s"
+                        alt="Pan Con Tomate">
+                    <div class="item-details">
+                        <p class="dishes">Pan Con Tomate</p>
+                        <p class="description">A simple yet effective dish - sourdough bread, crushed tomatoes, salt,
+                            olive oil & garlic</p>
+                        <p class="prices">- £5.30</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ-32fx1zuXSG77uhifFPyUtIJT6pe-Ef5Og&s"
+                        alt="Tortilla">
+                    <div class="item-details">
+                        <p class="dishes">Tortilla Espanola</p>
+                        <p class="description">Spanish omelette with potatoes, eggs, onions & olive oil</p>
+                        <p class="prices">- £7.95</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY0wArDWuSoYUwh7sghOCYAurA19YdtqV0Q&s"
+                        alt="Pulpo">
+                    <div class="item-details">
+                        <p class="dishes">Pulpo a la Gallea</p>
+                        <p class="description">Galician style octopus with boiled octopus and potatoes, paprika, salt &
+                            olive oil</p>
+                        <p class="prices">- £15.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="paellas">
+                <h3>Paellas</h3>
+
+                <div class="menu-item">
+                    <img src="https://www.recipesfromeurope.com/wp-content/uploads/2023/12/spanish-paella-valenciana-authentic-recipe-og-1.jpg"
+                        alt="Paella Valenciana">
+                    <div class="item-details">
+                        <p class="dishes">Paella Valenciana</p>
+                        <p class="description">Traditional Valencian Paella with chicken, beans & rabbit</p>
+                        <p class="prices">- £15.99 per person</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://yhoyquecomemos.com/wp-content/uploads/2022/01/paella-marinera-o-paella-de-marisco.jpg"
+                        alt="Paella Marinera">
+                    <div class="item-details">
+                        <p class="dishes">Paella Marinera</p>
+                        <p class="description">Seafood Paella with shrimp, mussels and squid</p>
+                        <p class="prices">- £16.99 per person</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8BkGcmImIclbOt8rrM2ImM-C8kHVhixH4Q&s"
+                        alt="Arroz Negro">
+                    <div class="item-details">
+                        <p class="dishes">Arroz Negro</p>
+                        <p class="description">Black Seafood Paella with squid ink and squid</p>
+                        <p class="prices">- £16.99 per person</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="desserts">
+                <h3>Desserts</h3>
+
+                <div class="menu-item">
+                    <img src="https://www.eladerezo.com/wp-content/uploads/2015/04/receta-de-crema-catalana-1200x673.jpg"
+                        alt="Crema Catalana">
+                    <div class="item-details">
+                        <p class="dishes">Crema Catalana</p>
+                        <p class="description">Catalonian creme caramel, served with a scoop of vanilla ice cream</p>
+                        <p class="prices">- £8.95</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgiseZoj0ASwdZUxAZhCVeZdfa0FlTSZgeZA&s"
+                        alt="Churros">
+                    <div class="item-details">
+                        <p class="dishes">Churros</p>
+                        <p class="description">Spanish fried doughnut sticks, with sugar, cinnamon and hot chocolate
+                            sauce</p>
+                        <p class="prices">- £9.95</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://www.spicebangla.com/wp-content/uploads/2024/12/Basque-Cheesecake.webp"
+                        alt="Basque Cheesecake">
+                    <div class="item-details">
+                        <p class="dishes">Basque Cheesecake</p>
+                        <p class="description">A slice of burnt, baseless Basque style cheesecake</p>
+                        <p class="prices">- £9.05</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section id="order-form">
+            <h2>Place your Order</h2>
+            <form>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>Made with Love by Reks</p>
+    </footer>
+</body>
+
+</html>
+
+<!--InstructionsThe HTML file should be properly structured (Hint: start with <!DOCTYPE html>).
+A <title> element with the restaurant name should be included in the <head> element.
+A header section that features:
+An image with an id of "header-img".
+A <h1> heading element with the name of the restaurant.
+A navigation section with two headings for "#menu" and "#order-form".
+A main section for the menu and order form, featuring:
+Two sections, each with a <h2> heading that says "Menu" and "Place Your Order". The "Menu" section should have at least three <article> elements for the menu items that use the following elements:
+An <img> image element.
+A <h3> element for the name of the menu item.
+A <p> paragraph element that briefly describes the item (1-2 sentences) and includes price information (italicized).
+The "Place Your Order" section must include a <form> element with the following inputs:
+Number inputs for each menu item (make sure to validate input with a minimum of 0).
+Radio and/or checkbox inputs for things like sides and add-ons.
+At least one <textarea> element for one of the items (for special requests).
+A submit input that says "Go To Checkout".
+Note: Make sure to include a <label> element for each <input> element.
+A footer that includes a <p> paragraph element that reads "Made with love by " followed by your Codédex username. -->
+
+<!-- Pan Con Tomate image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9VWMChDApTtBrtEQlO5P_ii4li2UMC7eKqQ&s
+     Paella Valenciana image: https://www.recipesfromeurope.com/wp-content/uploads/2023/12/spanish-paella-valenciana-authentic-recipe-og-1.jpg
+     Tortilla Espanola image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ-32fx1zuXSG77uhifFPyUtIJT6pe-Ef5Og&s
+     Basque Cheesecake image: https://spanishsabores.com/wp-content/uploads/2020/05/DSC08145.jpg
+     Albondigas image: https://recetasdecocina.elmundo.es/wp-content/uploads/2024/10/albondigas-en-salsa.jpg
+     Gambas al ajillo image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdschheGAXI_3lmEQyXmrSn_XG3Frhj8x1Vg&s
+     Churros image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgiseZoj0ASwdZUxAZhCVeZdfa0FlTSZgeZA&s
+     Crema Catalana image: https://www.eladerezo.com/wp-content/uploads/2015/04/receta-de-crema-catalana-1200x673.jpg
+     Alcachofas asadas image: https://i0.wp.com/www.natachasanzcaballero.com/wp-content/uploads/2021/04/DSC_0800.jpg?fit=1180%2C787&ssl=1
+     Aceitunas image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHp8ZvWEzJJ95q2rEUkL6f0tyvWfUj2GnfyQ&s
+     Paella de Mariscos image: https://yhoyquecomemos.com/wp-content/uploads/2022/01/paella-marinera-o-paella-de-marisco.jpg
+     Arroz Negro image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd8BkGcmImIclbOt8rrM2ImM-C8kHVhixH4Q&s
+     Pulpo a la Gallega image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVY0wArDWuSoYUwh7sghOCYAurA19YdtqV0Q&s
+     -->
