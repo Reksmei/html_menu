@@ -30,7 +30,7 @@
             text-align: center;
             padding: 10px;
             border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: white;
         }
 
         .item-details {
@@ -60,7 +60,7 @@
 
         .prices {
             font-weight: bold;
-            color: #d32f2f;
+            color: red;
             margin: 0;
         }
 
@@ -80,7 +80,7 @@
 
 <body>
     <header>
-        <h1>Reks Restaurant</h1>
+        <h1 style=color:red>Reks Restaurant</h1>
         <p style="font-style: italic;">Welcome to Reks' Restaurant, serving you authentic Spanish cuisine for takeaway
             and delivery</p>
         <img src="https://hlloret.com/wp-content/uploads/2022/11/habits-food-in-spain-by-regions.jpg" width="200px">
@@ -259,110 +259,41 @@
                 <h4>Tapas</h4>
                 <p>Choose which tapas dishes you'd like to order and the quantity</p>
                 <label for="aceitunas">Aceitunas</label>
-                <select name="aceitunas" id="aceitunas">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="taceitunas" name="aceitunas" min="0" max="5"><br>
 
                 <label for="pan-con-tomate">Pan Con Tomate</label>
-                <select name="pan-con-tomate" id="pan-con-tomate">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="pan-con-tomate" name="pan-con-tomate" min="0" max="5"><br>
 
                 <label for="tortilla-espanola">Tortilla Española</label>
-                <select name="tortilla" id="tortilla-espanola">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="tortilla-espanola" name="tortilla-espanola" min="0" max="5"><br>
 
                 <label for="pulpo-a-la-gallega">Pulpo a la Gallega</label>
-                <select name="pulpo" id="pulpo-a-la-gallega">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="pulpo-a-la-gallega" name="pulpo-a-la-gallega" min="0" max="5"><br>
 
                 <label for="alcachofas-asadas">Alcachofas Asadas</label>
-                <select name="alcachofas-asadas" id="alcachofas-asadas">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="alcachofas-asadas" name="alcachofas-asadas" min="0" max="5"><br>
 
                 <label for="albongidas">Albongidas</label>
-                <select name="albongidas" id="albongidas">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="albongidas" name="albongidas" min="0" max="5"><br>
 
                 <label for="gambas">Gambas Al Ajillo</label>
-                <select name="gambas" id="gambas">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br><br>
+                <input type="number" id="gambas" name="gambas" min="0" max="5"><br><br>
 
                 <label for="requests-tapas">Any special order requests? Please let us know of any dietary requirements
                     or
                     other information below:</label><br>
                 <textarea id="requests-tapas" name="requests-tapas" rows="6" cols="50"></textarea><br>
                 <h4>Paellas</h4>
-                <p>Choose which paella dishes you'd like to order and the quantity. Each portion serves 1 person.</p>
-                <label for "paella-valenciana">Paella Valenciana</label>
-                <select name="paella-valenciana" id="paella-valenciana" min="0">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <p>Choose which paella dishes you'd like to order and the quantity (max 5). Each portion serves 1
+                    person.</p>
+                <label for="paella-valenciana">Paella Valenciana</label>
+                <input type="number" id="paella-valenciana" name="paella-valenciana" min="0" max="5"><br>
 
                 <label for="paella-marinera">Paella Marinera</label>
-                <select name="paella-marinera" id="paella-marinera">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="paella-marinera" name="paella-marinera" min="0" max="5"><br>
 
                 <label for="arroz-negro">Arroz Negro</label>
-                <select name="arroz-negro" id="arroz-negro">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="arroz-negro" name="arroz-negro" min="0" max="5"><br><br>
 
                 <label for="requests-paella">Any special order requests? Please let us know of any dietary requirements
                     or
@@ -370,50 +301,21 @@
                 <textarea id="requests-paella" name="requests-paella" rows="6" cols="50"></textarea><br>
 
                 <h4>Desserts</h4>
-                <p>Choose which desserts dishes you'd like to order and the quantity.</p>
+                <p>Choose which desserts dishes you'd like to order and the quantity (up to 5).</p>
                 <label for="crema-catalana">Crema Catalana</label>
-                <select name="crema-catalana" id="crema-catalana">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="crema-catalana" name="crema-catalana" min="0" max="5"><br>
 
                 <label for="churros">Churros</label>
-                <select name="churros" id="churros">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="churros" name="churros" min="0" max="5"><br>
 
                 <label for="basque-cheesecake">Basque Cheesecake</label>
-                <select name="basque-cheesecake" id="basque-cheesecake">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="basque-cheesecake" name="basque-cheesecake" min="0" max="5"><br>
 
                 <label for="santiago">Tarta de Santiago</label>
-                <select name="santiago" id="santiago">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select><br>
+                <input type="number" id="santiago" name="santiago" min="0" max="5"><br><br>
 
                 <label for="requests-dessert">Any special order requests? Please let us know of any dietary requirements
-                    or
-                    other information below:</label><br>
+                    or other information below:</label><br>
                 <textarea id="requests-dessert" name="requests-dessert" rows="6" cols="50"></textarea><br>
             </form>
         </section>
